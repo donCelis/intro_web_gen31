@@ -1,0 +1,24 @@
+body {
+  background: #2c3e50;
+  color: whitesmoke;
+}
+
+p {
+  color: whitesmoke;
+}
+
+.text-orange {
+  color: #e67e22;
+}
+
+.text-green {
+  color: #16a085;
+}
+
+.text-red {
+  color: #e74c3c;
+}
+
+#header {
+  color: aqua;
+}
