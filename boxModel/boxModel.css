@@ -1,0 +1,24 @@
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2c3e50;
+  color: white;
+  font-family: system-ui;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  font-size: 18px;
+  padding: 16px;
+  background: #2980b9;
+}

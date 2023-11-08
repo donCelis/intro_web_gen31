@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* estilos generales */
+/* title */
+.text-center {
+  text-align: center;
+}
+
+.title-sm {
+  font-size: 1rem;
+}
+
+.title-md {
+  font-size: 2rem;
+}
+
+.title-big {
+  font-size: 3rem;
+}
+
+/* spacers */
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
+}
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+main {
+  color: white;
+  background-image: url("../images/desktop/image-header.jpg");
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+nav a {
+  padding: 0.2rem;
+}
+
+.btn-white {
+  background: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
