@@ -26,7 +26,7 @@ a {
 }
 
 .title-md {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 .title-big {
@@ -59,7 +59,8 @@ a {
 
 main {
   color: white;
-  background: url("../images/desktop/image-header.jpg") center 70%/80% no-repeat #3dbfff;
+  background: url("../images/desktop/image-header.jpg") center bottom/80%
+    no-repeat #3dbfff;
 }
 
 header {
@@ -91,9 +92,59 @@ nav a {
 }
 
 .hero {
-  padding-bottom: 16rem;
+  padding-top: 6rem;
+  padding-bottom: 18rem;
 }
 .hero h2 {
   letter-spacing: 8px;
   text-transform: uppercase;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.services article {
+  padding: 5rem;
+}
+
+.services picture img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.services article button {
+  background: none;
+  border: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.services article button::after {
+  content: "";
+  width: 110%;
+  height: 8px;
+  background: red;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+  left: 50%;
+  bottom: 6px;
+  z-index: -1;
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+
+.services article button:hover::after{
+  opacity: 1;
+}
+
+.services article p {
+  color: hsl(232, 10%, 55%);
+  margin: 1.4rem 0;
 }
