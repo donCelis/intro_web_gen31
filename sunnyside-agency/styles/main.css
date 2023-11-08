@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 }
 
 body {
-  font-family: system-ui;
+  font-family: "Barlow", sans-serif;
   font-size: 18px;
 }
 
@@ -32,6 +33,10 @@ a {
   font-size: 3rem;
 }
 
+.title-font {
+  font-family: "Fraunces", serif;
+}
+
 /* spacers */
 .mb-1 {
   margin-bottom: 1rem;
@@ -54,14 +59,18 @@ a {
 
 main {
   color: white;
-  background-image: url("../images/desktop/image-header.jpg");
+  background: url("../images/desktop/image-header.jpg") center 70%/80% no-repeat #3dbfff;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.logo img {
+  width: 10rem;
 }
 
 nav {
@@ -79,4 +88,12 @@ nav a {
   color: black;
   padding: 0.5rem 1rem;
   border-radius: 100px;
+}
+
+.hero {
+  padding-bottom: 16rem;
+}
+.hero h2 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
 }
