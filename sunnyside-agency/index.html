@@ -25,6 +25,9 @@
           <a href="">Projects</a>
           <a class="btn-white title-font" href="">Contact</a>
         </nav>
+        <div class="icon-menu">
+          <img src="./images/icon-hamburger.svg" alt="icon menu" />
+        </div>
       </header>
       <section class="hero text-center py-2">
         <h2 class="title-font title-big mb-3">We are creatives</h2>
@@ -32,7 +35,7 @@
       </section>
     </main>
     <section class="services">
-      <article class="learn-more">
+      <article class="learn-more order-2">
         <h3 class="title-font title-md">Transform your brand</h3>
         <p>
           We are a full-service creative agency specializing in helping brands
@@ -41,13 +44,21 @@
         </p>
         <button class="title-font">Learn more</button>
       </article>
-      <picture>
+      <picture class="order-1">
+        <source
+          media="(max-width: 540px)"
+          srcset="./images/mobile/image-transform.jpg"
+        />
         <img src="./images/desktop/image-transform.jpg" alt="" />
       </picture>
-      <picture>
+      <picture class="order-3">
+        <source
+          media="(max-width: 540px)"
+          srcset="./images/mobile/image-stand-out.jpg"
+        />
         <img src="./images/desktop/image-stand-out.jpg" alt="" />
       </picture>
-      <article class="learn-more">
+      <article class="learn-more order-4">
         <h3 class="title-font title-md">Stand out to the right audience</h3>
         <p>
           Using a collaborative formula of designers, researchers,
@@ -56,10 +67,7 @@
         </p>
         <button class="title-font">Learn more</button>
       </article>
-      <article class="image-with-text-container">
-        <picture class="background-image">
-          <img src="./images/desktop/image-graphic-design.jpg" alt="" />
-        </picture>
+      <article class="image-with-text-container order-5">
         <div class="frontend-text">
           <h4 class="title-font title-md font-bold text-center">
             Graphic design
@@ -70,11 +78,15 @@
             attention.
           </p>
         </div>
-      </article>
-      <article class="image-with-text-container">
         <picture class="background-image">
-          <img src="./images/desktop/image-photography.jpg" alt="" />
+          <source
+            media="(max-width: 540px)"
+            srcset="./images/mobile/image-graphic-design.jpg"
+          />
+          <img src="./images/desktop/image-graphic-design.jpg" alt="" />
         </picture>
+      </article>
+      <article class="image-with-text-container order-6">
         <div class="frontend-text">
           <h4 class="title-font title-md font-bold text-center">Photography</h4>
           <p class="text-center">
@@ -82,9 +94,16 @@
             photos that improve your business image.
           </p>
         </div>
+        <picture class="background-image">
+          <source
+            media="(max-width: 540px)"
+            srcset="./images/mobile/image-photography.jpg"
+          />
+          <img src="./images/desktop/image-photography.jpg" alt="" />
+        </picture>
       </article>
     </section>
-    <section class="p-4">
+    <section class="testimonials p-4">
       <h3 class="text-center mb-3">Client testimonials</h3>
       <div class="d-flex">
         <article class="card">

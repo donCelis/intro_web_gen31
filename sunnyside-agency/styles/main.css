@@ -9,6 +9,9 @@
 body {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 a {
@@ -49,13 +52,14 @@ a {
 
 .frontend-text {
   position: absolute;
-  top: 350px;
-  z-index: -1;
+  z-index: 0;
+  bottom: 2rem;
+  padding: 0 2rem;
 }
 
 .background-image {
   position: relative;
-  z-index: -2;
+  z-index: -10;
 }
 
 /* spacers */
@@ -109,7 +113,8 @@ a {
 
 main {
   color: white;
-  background: url("../images/desktop/image-header.jpg") center bottom/80% no-repeat #3dbfff;
+  background: url("../images/desktop/image-header.jpg") center bottom/80%
+    no-repeat #3dbfff;
 }
 
 header {
@@ -131,6 +136,10 @@ nav {
 
 nav a {
   padding: 0.2rem;
+}
+
+.icon-menu {
+  display: none;
 }
 
 .btn-white {
@@ -188,6 +197,7 @@ nav a {
   z-index: -1;
   transform: translateX(-50%);
   opacity: 0.3;
+  transition: opacity ease-in-out 0.2s;
 }
 
 .services article button:hover::after {
@@ -217,4 +227,71 @@ nav a {
 
 .d-flex {
   display: flex;
+}
+
+/* Responsive desing */
+
+/* @media screen and (max-width: 1024px) {
+
+} */
+
+/* @media screen and (max-width: 768px) {
+
+} */
+
+@media screen and (max-width: 540px) {
+  nav {
+    display: none;
+  }
+
+  .icon-menu {
+    display: block;
+  }
+
+  .hero {
+    padding-top: calc(6rem / 1.4);
+    padding-bottom: calc(18rem / 1.4);
+  }
+
+  main {
+    background-image: url("../images/mobile/image-header.jpg");
+    background-size: cover;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .services :is(article, picture) {
+    height: 100%;
+    display: block;
+  }
+
+  .order-1 {
+    order: 1;
+  }
+  .order-2 {
+    order: 2;
+  }
+  .order-3 {
+    order: 3;
+  }
+  .order-4 {
+    order: 4;
+  }
+  .order-5 {
+    order: 5;
+  }
+  .order-6 {
+    order: 6;
+  }
+
+  .testimonials > div {
+    flex-direction: column;
+  }
+
+  .testimonials .card-header {
+    scale: 1.4;
+  }
 }
